@@ -9,10 +9,10 @@ $active = (isset($_GET["content"])) ? $_GET["content"] : "";
   </button>
   <div class="collapse navbar-collapse" id="Locations">
     <ul class="navbar-nav">
-      <a class="nav-item nav-link active" href="index.php?content=homepage" id="location">Locations<span class="sr-only">(current)</span></a>
+      <a class="nav-item nav-link active" href="index.php?content=locations" id="location">Locations<span class="sr-only">(current)</span></a>
     </ul>
 
-    <a class="navbar-brand" id="foto" href="#"> <img src="https://uploads-ssl.webflow.com/5f3ece93689659d6e7431728/5f3ece93689659584f431736_Marina%202.svg" width="80" height="80" class="d-inline-block align-top" alt="">
+    <a class="navbar-brand" id="foto" href="index.php?content=homepage"> <img src="./images/hollywood1.png" width="80" height="80" class="d-inline-block align-top" alt="">
   </a>
         
 
@@ -34,6 +34,9 @@ $active = (isset($_GET["content"])) ? $_GET["content"] : "";
 //                 <a class="nav-link" id="nav_text_1" href="./index.php?content=contactinfo">Contact</a>
 //             </li>';         
 ?>
+      <ul class="navbar-nav">
+        <a class="nav-item nav-link active" href="index.php?content=menu" id="menu">Menu</a>
+      </ul>
     <ul class="navbar-nav">
       <a class="nav-item nav-link active" href="index.php?content=contact" id="contact">Contact</a>
     </ul>

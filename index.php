@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    <!-- java -->
+    <link rel="stylesheet" href="./js/java.js">
     <!-- favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
     <!-- de google fonts -->
@@ -19,7 +21,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     
-    <title>Exotisch fruit</title>
+
+    <title>Jacob Marinus</title>
 
 
     <!-- Image and text -->
@@ -44,7 +47,7 @@
                     include("./" . $_GET["content"] . ".php");
                   }
                   else {
-                    include("./foto.php");
+                    include("./homepage.php");
                   }
       
                 ?>
@@ -53,7 +56,7 @@
         <div class="row">
             <div class="col-12">
                <?php
-                  include("./footer.php");
+
                   ?> 
             </div>
         </div>
