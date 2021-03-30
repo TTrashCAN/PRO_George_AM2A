@@ -17,3 +17,13 @@
     <br>
     <a href="" id="welkomT">Steak Frites or Pizza Tuna?</a>
 </div>
+
+<div id="mySidepanel" class="sidepanel">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Clients</a>
+  <a href="#">Contact</a>
+</div>
+
+

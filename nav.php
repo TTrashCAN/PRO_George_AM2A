@@ -9,9 +9,8 @@ $active = (isset($_GET["content"])) ? $_GET["content"] : "";
   </button>
   <div class="collapse navbar-collapse" id="Locations">
     <ul class="navbar-nav">
-      <a class="nav-item nav-link active" href="index.php?content=locations" id="location">Locations<span class="sr-only">(current)</span></a>
+      <a class="openbtn" onclick="openNav()">Locations<span class="sr-only">(current)</span></a>
     </ul>
-
     <a class="navbar-brand" id="foto" href="index.php?content=homepage"> <img src="./images/hollywood1.png" width="80" height="80" class="d-inline-block align-top" alt="">
   </a>
         
