@@ -20,10 +20,20 @@
 
 <div id="mySidepanel" class="sidepanel">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">About</a>
+  <div class="card-body">
+    <H1>This is some text within a card body.</H1>
+  </div>
   <a href="#">Services</a>
   <a href="#">Clients</a>
   <a href="#">Contact</a>
+</div>
+
+<div id="mySidepanelR" class="sidepanelR">
+  <a href="javascript:void(0)" class="closebtnR" onclick="closeNavR()">&times;</a>
+  <a href="#">R</a>
+  <a href="#">R</a>
+  <a href="#">R</a>
+  <a href="#">R</a>
 </div>
 
 

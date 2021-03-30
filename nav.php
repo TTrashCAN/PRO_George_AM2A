@@ -37,7 +37,7 @@ $active = (isset($_GET["content"])) ? $_GET["content"] : "";
         <a class="nav-item nav-link active" href="index.php?content=menu" id="menu">Menu</a>
       </ul>
     <ul class="navbar-nav">
-      <a class="nav-item nav-link active" href="index.php?content=contact" id="contact">Contact</a>
+    <a class="openbtnR" onclick="openNavR()">Contact<span class="sr-only">(current)</span></a>
     </ul>
 
     </li> 

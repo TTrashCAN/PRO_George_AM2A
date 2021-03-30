@@ -77,7 +77,7 @@
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: white;
     display: block;
     transition: 0.3s;
 }
@@ -105,7 +105,7 @@
 
 .openbtn {
     color: black;
-    margin-left: 150px;
+    margin-left: 300px;
     font-family: baskerville-urw, sans-serif;
 }
 
@@ -123,6 +123,73 @@
     /* Stay on top */
     top: 0;
     left: 0;
+    background-color: #111;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+/* The sidepanel Rechts */
+
+.sidepanelR a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    margin-left: 250px;
+}
+
+
+/* When you mouse over the navigation links, change their color */
+
+.sidepanelR a:hover {
+    color: #f1f1f1;
+}
+
+
+/* Position and style the close button (top right corner) */
+
+.sidepanelR .closebtnR {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    font-size: 36px;
+    margin-left: 0px;
+}
+
+
+/* Style the button that is used to open the sidepanel */
+
+.openbtnR {
+    color: black;
+    margin-left: 150px;
+    font-family: baskerville-urw, sans-serif;
+}
+
+
+/* The sidepanel menu */
+
+.sidepanelR {
+    height: 800px;
+    /* Specify a height */
+    width: 0px;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    right: 0;
     background-color: #111;
     /* Black*/
     overflow-x: hidden;
