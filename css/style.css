@@ -1,3 +1,7 @@
+body {
+    overflow: hidden;
+}
+
 #navbar {
     background-color: #ffffff;
     border: 1px solid black;
@@ -8,6 +12,7 @@
 .marina {
     height: 500px;
     overflow: hidden;
+    margin-bottom: -40px;
 }
 
 #contact {
@@ -33,14 +38,40 @@
 }
 
 #welkom {
-    margin: auto;
     width: 50%;
     padding: 10px;
     text-align: center;
+    font-family: baskerville-urw, sans-serif;
 }
 
 #welkomT {
     color: black;
+}
+
+
+/* rechts css */
+
+#mySidepanelR {
+    color: white;
+    text-align: center;
+    font-family: Baskerville Display PT Regular;
+}
+
+.text-span {
+    font-size: 25px;
+}
+
+.text-block-5 {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+
+/* links css */
+
+#mySidepanel {
+    color: white;
+    font-family: baskerville-urw, sans-serif;
 }
 
 
@@ -60,7 +91,7 @@
     /* Stay on top */
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: rgb(51, 50, 50);
     /* Black*/
     overflow-x: hidden;
     /* Disable horizontal scroll */
@@ -107,30 +138,6 @@
     color: black;
     margin-left: 300px;
     font-family: baskerville-urw, sans-serif;
-}
-
-
-/* The sidepanel menu */
-
-.sidepanel {
-    height: 800px;
-    /* Specify a height */
-    width: 0px;
-    /* 0 width - change this with JavaScript */
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Stay on top */
-    top: 0;
-    left: 0;
-    background-color: #111;
-    /* Black*/
-    overflow-x: hidden;
-    /* Disable horizontal scroll */
-    padding-top: 60px;
-    /* Place content 60px from the top */
-    transition: 0.5s;
-    /* 0.5 second transition effect to slide in the sidepanel */
 }
 
 
@@ -190,7 +197,7 @@
     /* Stay on top */
     top: 0;
     right: 0;
-    background-color: #111;
+    background-color: rgb(51, 50, 50);
     /* Black*/
     overflow-x: hidden;
     /* Disable horizontal scroll */
