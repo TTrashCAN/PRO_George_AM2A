@@ -1,5 +1,11 @@
 body {
     overflow: hidden;
+    background-image: url(../images/achtergrond.jpg);
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #navbar {
@@ -46,6 +52,17 @@ body {
 
 #welkomT {
     color: black;
+}
+
+
+/* grappig */
+
+#kaas {
+    color: transparent;
+}
+
+#kaas2 {
+    background-image: url(../images/unknown.png);
 }
 
 

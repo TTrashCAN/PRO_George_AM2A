@@ -44,7 +44,7 @@
                 } else {
                     include("./homepage.php");
                 }
-
+                    include("./fold.php");
                 ?>
             </div>
         </div>
