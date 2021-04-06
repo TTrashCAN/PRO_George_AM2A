@@ -15,6 +15,12 @@
   <h6 href="" id="welkomT">Reserveer nu snel of bestel lekker wat op onze website!</h6>
 </div>
 
+<div class="container-fluid" id="welkom">
+<button type="button" class="btn btn-outline-dark">Bestellen</button>
+<button type="button" class="btn btn-outline-dark">Menu</button>
+<button type="button" class="btn btn-outline-dark">Reseveren</button>
+</div>
+
 <div>
   <a href="sus.php" id="kaas">kaas</a>
 </div>
