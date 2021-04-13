@@ -8,10 +8,11 @@ body {
 }
 
 #navbar {
-    background-color: #ffffff;
+    background-color: transparent;
     border: 1px solid black;
     margin-bottom: 1px;
     list-style-type: none;
+    text-shadow: 2px 2px 5px black;
 }
 
 .marina {
@@ -90,6 +91,38 @@ body {
 #mySidepanel {
     color: white;
     font-family: baskerville-urw, sans-serif;
+}
+
+
+/* cards */
+
+.products {
+    border: 1px solid #333;
+    background-color: white;
+    border-radius: 5px;
+    padding: 16px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    min-height: 410px;
+}
+
+#buttonshop {
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+#imageProduct {
+    width: 315px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.text-info {
+    color: #212529!important;
+}
+
+.Scard p {
+    min-height: 3rem;
 }
 
 

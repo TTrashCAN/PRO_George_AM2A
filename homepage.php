@@ -2,6 +2,7 @@
   <img src="./images/marina.png" alt="">
 </header>
 
+
 <div class="container-fluid" id="welkom">
   <h6 href="" id="welkomT">GEORGE wilt u graag welkom heten. Wij hebben u gemist!</h6>
   <h6 href="" id="welkomT">En wij weten dat jullie ook ons hebben gemist!</h6>

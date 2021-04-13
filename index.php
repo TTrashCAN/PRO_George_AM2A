@@ -39,9 +39,10 @@
         <div class="row" id="fluid-content">
             <div class="col-12">
                 <?php
-                if (isset($_GET["content"])) {
+                  if ( isset($_GET["content"]) ){
                     include("./" . $_GET["content"] . ".php");
-                } else {
+                  }
+                else {
                     include("./homepage.php");
                 }
                     include("./fold.php");
