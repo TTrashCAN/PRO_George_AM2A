@@ -17,9 +17,9 @@
 </div>
 
 <div class="container-fluid" id="welkom">
-<button type="button" class="btn btn-outline-dark">Bestellen</button>
-<button type="button" class="btn btn-outline-dark">Menu</button>
-<button type="button" class="btn btn-outline-dark">Reseveren</button>
+<a type="button" id="bestellen-knop"  href="index.php?content=productenpage" class="btn btn-outline-dark">Bestellen</a>
+<a type="button" id="menu-knop" href="https://uploads-ssl.webflow.com/5f3ece93689659d6e7431728/5f3eced0f51a7667d8989478_MARINA%20MENU.pdf" class="btn btn-outline-dark" >Menu</a>
+<button type="button" id="reseveren-knop"  class="btn btn-outline-dark">Reseveren</button>
 </div>
 
 <div>
