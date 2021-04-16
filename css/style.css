@@ -129,6 +129,15 @@ body {
     min-height: 3rem;
 }
 
+.Scard {
+    font-family: Baskerville Display PT Regular;
+    font-size: large;
+}
+
+#menu-kaart {
+    background-image: url(../images/achtergrond_cart.png);
+}
+
 
 /* fold */
 

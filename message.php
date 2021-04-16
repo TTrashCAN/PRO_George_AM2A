@@ -6,6 +6,13 @@
 
 
     switch($alert){
+      case "bestellingklaar" : 
+        echo '<div class="alert alert-danger mt-5  w-50 mx-auto" role="alert">
+        Uw bestelling is doorgevoerd, bedankt!
+      </div>';
+      header("refresh: 3; ./index.php?content=homepage");
+        break;
+
         case "no-email" : 
             echo '<div class="alert alert-danger mt-5  w-50 mx-auto" role="alert">
             U heeft geen email ingevult, probeer het opnieuw

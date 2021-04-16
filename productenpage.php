@@ -73,7 +73,7 @@ if ($result){
         ?>
         <div class="col-sm-4 col-md-4 Scard" id="">
             <form method="post" action="index.php?content=productenpage&action=add&id=<?php echo $product['id'];?>">
-                <div class="products" id="test">
+                <div class="products" id="menu-kaart">
                     <img src="<?php echo $product['Image'];?>" class="img-responsive" id="imageProduct">
                     <h4 class="text-info"><?php echo $product['Naam']; ?></h4>
                     <h5 class="text-info"><?php echo $product['Categorie']; ?></h5>
@@ -98,8 +98,7 @@ if ($result){
     <table class="table">
     <tr id="ShoppingCard"><th colspan="5"><h3>Order Details</h3></th></tr>
     <tr id="ShoppingCard">
-        <th width="25%">Maaltijd Naam</th>
-        <th width="15%">Categorie</th>
+        <th width="40%">Maaltijd Naam</th>
         <th width="10%">Hoeveelhijd</th>
         <th width="20%">Prijs</th>    
         <th width="15%">Totaal bedrag</th>    
@@ -113,7 +112,6 @@ if ($result){
     ?>
     <tr id="ShoppingCard">
             <td><?php echo $product['name']; ?></td>
-            <td><?php echo $product['Categorie']; ?></td>
             <td><?php echo $product['quantity']; ?></td>
             <td><?php echo $product['price']; ?></td>
             <td><?php echo number_format($product['quantity'] * $product['price'], 2); ?></td>
@@ -140,7 +138,6 @@ if ($result){
                 if (isset($_SESSION['shopping_cart'])):
                 if (count($_SESSION['shopping_cart']) > 0):
             ?>
-                <!-- <a href="https://newint.org/features/1989/08/05/ten" class="button btn-dark">Checkout</a> -->
                 <a href="index.php?content=verzonden" class="btn btn-dark btn-lg active" role="button" aria-pressed="true">Checkout</a>
             <?php endif; endif; ?>
         </td>
