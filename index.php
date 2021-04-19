@@ -18,7 +18,7 @@
 
 
 
-    <title>Jacob Marinus</title>
+    <title>George Hollywood</title>
 
 
     <!-- Image and text -->

@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="./css/style.css">
+
 <?php
 $mysqli = new mysqli('localhost', 'root', '', 'georgehollywood');
 if(isset($_GET['date'])){

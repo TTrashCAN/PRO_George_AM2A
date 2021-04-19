@@ -16,12 +16,18 @@ body {
 }
 
 .marina {
-    height: 500px;
+    height: 320px;
     overflow: hidden;
     margin-bottom: -40px;
 }
 
 #contact {
+    color: black;
+    margin-left: 150px;
+    font-family: baskerville-urw, sans-serif;
+}
+
+#reseveren {
     color: black;
     margin-left: 150px;
     font-family: baskerville-urw, sans-serif;
@@ -39,9 +45,9 @@ body {
     margin-left: 300px;
 }
 
-#location {
+#Locations {
     color: black;
-    margin-left: 300px;
+    margin-right: 0;
     font-family: baskerville-urw, sans-serif;
 }
 
@@ -200,7 +206,7 @@ body {
 
 .openbtn {
     color: black;
-    margin-left: 300px;
+    margin-left: 100px;
     font-family: baskerville-urw, sans-serif;
 }
 
@@ -269,4 +275,46 @@ body {
     /* Place content 60px from the top */
     transition: 0.5s;
     /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+
+/* test text */
+
+.ml1 {
+    font-weight: 900;
+    font-size: 8em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 9.3em
+}
+
+.ml1 .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+.ml1 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+}
+
+.ml1 .line {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background-color: #fff;
+    transform-origin: 0 0;
+}
+
+.ml1 .line1 {
+    top: 0;
+}
+
+.ml1 .line2 {
+    bottom: 0;
 }

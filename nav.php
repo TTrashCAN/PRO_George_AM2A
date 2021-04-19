@@ -12,6 +12,9 @@ $active = (isset($_GET["content"])) ? $_GET["content"] : "";
     <ul class="navbar-nav">
       <a class="openbtn" onclick="openNav()">Locations<span class="sr-only">(current)</span></a>
     </ul>
+    <ul class="navbar-nav">
+      <a class="nav-item nav-link active" href="index.php?content=reseveren" id="reseveren">reseveren</a>
+    </ul>
 
     <a class="navbar-brand" id="foto" href="index.php?content=homepage"> <img src="./images/hollywood1.png" width="80" height="80" class="d-inline-block align-top" alt="">
     </a>

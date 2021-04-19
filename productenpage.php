@@ -84,7 +84,7 @@ if ($result){
                     <input type="hidden" name="name" value="<?php echo $product['Naam'];?>"> 
                     <input type="hidden" name="price" value="<?php echo $product['Prijs'];?>">
                     <br>
-                    <input id="buttonshop" type="submit" name="add_to_cart" class="btn btrn_info btn-dark" value="Add to Cart">
+                    <input id="buttonshop" type="submit" name="add_to_cart" class="btn btrn_info btn-dark" value="Toevoegen">
                 </div>
             </form>
         </div>
@@ -96,6 +96,7 @@ if ($result){
     <div style="clear:both"></div>
     <br> 
     <div class="table-responsive">
+    <form method="POST" action="./index.php?content=create" >
     <table class="table">
     <tr id="ShoppingCard"><th colspan="5"><h3>Order Details</h3></th></tr>
     <tr id="ShoppingCard">
@@ -139,10 +140,11 @@ if ($result){
                 if (isset($_SESSION['shopping_cart'])):
                 if (count($_SESSION['shopping_cart']) > 0):
             ?>
-                <a href="index.php?content=verzonden" class="btn btn-dark btn-lg active" role="button" aria-pressed="true">Checkout</a>
+                <button type="submit" class="btn btn-secondary">Versturen</button>
             <?php endif; endif; ?>
         </td>
     </tr>
+    </form>
     </div>
     <?php 
     endif;
