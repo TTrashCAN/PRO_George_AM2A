@@ -3,9 +3,9 @@
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
   <div class="card-body">
     <H3>OPENINGS TIJDEN</H3>
-    <H3>This is some text within a card body.</H3>
-    <H3>This is some text within a card body.</H3>
-    <H3>This is some text within a card body.</H3>
+    <H3>Locatie</H3>
+    <H3>Locatie</H3>
+    <H3>Locatie</H3>
   </div>
 </div>
 

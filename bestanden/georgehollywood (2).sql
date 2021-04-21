@@ -1,13 +1,14 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.2
+-- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Gegenereerd op: 20 apr 2021 om 05:59
--- Serverversie: 5.7.31
--- PHP-versie: 7.3.21
+-- Gegenereerd op: 21 apr 2021 om 22:01
+-- Serverversie: 5.7.26
+-- PHP-versie: 7.2.18
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -32,16 +33,9 @@ CREATE TABLE IF NOT EXISTS `bestellingen` (
   `id` int(50) NOT NULL AUTO_INCREMENT,
   `name` varchar(50) NOT NULL,
   `quantity` int(50) NOT NULL,
-  `total_price` decimal(50,0) NOT NULL,
+  `price` decimal(50,0) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
-
---
--- Gegevens worden geëxporteerd voor tabel `bestellingen`
---
-
-INSERT INTO `bestellingen` (`id`, `name`, `quantity`, `total_price`) VALUES
-(2, 'maaltijd', 4, '21');
 
 -- --------------------------------------------------------
 
@@ -56,14 +50,7 @@ CREATE TABLE IF NOT EXISTS `bookings` (
   `name` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=latin1;
-
---
--- Gegevens worden geëxporteerd voor tabel `bookings`
---
-
-INSERT INTO `bookings` (`id`, `date`, `name`, `email`) VALUES
-(6, '2021-04-17', 'test', 'test@test');
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 

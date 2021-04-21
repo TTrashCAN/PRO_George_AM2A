@@ -7,17 +7,16 @@
 <link rel="stylesheet" href="./css/george.css">
 
 <h1>
-    <span>G</span>
-    <span>E</span>
-    <span>O</span>
-    <span>R</span>
-    <span>G</span>
-    <span>E</span>
-    </br>
-    <span>F</span>
-    <span>L</span>
-    <span>O</span>
-    <span>Y</span>
     <span>D</span>
+    <span>Y</span>
+    <span>L</span>
+    <span>A</span>
+    <span>N</span>
+    </br>
+    <span>G</span>
+    <span>I</span>
+    <span>n</span>
+    <span>N</span>
+    <span>Y</span>
 
 </h1>

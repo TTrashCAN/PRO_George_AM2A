@@ -1,28 +1,51 @@
 <?php
 include("./connect.php");
 
+// var_dump($_SESSION["shopping_cart"]);
 
-
-if(isset($_POST['name'])){
-    $name = $_POST['name'];
-    $quantity = $_POST['quantity'];
-    $price = $_POST['total_price'];
-}
-
-
+foreach ($_SESSION['shopping_cart'] as $key => $product) :
+    // var_dump($product);
     $querry = "INSERT INTO `bestellingen` (`id`,
-                                        `name`,
-                                        `quantity`,
-                                        `total_price`) 
-                                VALUES (NULL,
-                                        $name',
-                                        '$quantity',
-                                        '$price')";
+                                            `name`,
+                                            `quantity`,
+                                            `price`) 
+                VALUES (NULL,
+                        '{$product['id']}',
+                        '{$product['name']}',
+                        '{$product['quantity']}',
+                        '{$product['price']}')";
+    
+    echo $querry;
+    $result = mysqli_query($conn, $querry);
+    if ($result) {
+        echo "Gelukt";
+    } else {
+        echo "Niet Gelukt";
+    }
+//  $total =  $total + ($product['quantity'] * $product['price']);
+endforeach;
 
 
-mysqli_query($conn, $querry);
 
-// header("Refresh: 1; index.php? content=read")
+// if(isset($_POST['name'])){
+//     $name = $_POST['name'];
+//     $quantity = $_POST['quantity'];
+//     $price = $_POST['total_price'];
+// }
+
+
+//     $querry = "INSERT INTO `bestellingen` (`id`,
+//                                         `name`,
+//                                         `quantity`,
+//                                         `total_price`) 
+//                                 VALUES (NULL,
+//                                         '$name',
+//                                         '$quantity',
+//                                         '$price')";
+
+
+// mysqli_query($conn, $querry);
+
 
 ?>
 
