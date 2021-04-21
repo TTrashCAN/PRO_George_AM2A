@@ -9,7 +9,7 @@ foreach ($_SESSION['shopping_cart'] as $key => $product) :
                                             `name`,
                                             `quantity`,
                                             `price`) 
-                VALUES (NULL,
+                VALUES (
                         '{$product['id']}',
                         '{$product['name']}',
                         '{$product['quantity']}',

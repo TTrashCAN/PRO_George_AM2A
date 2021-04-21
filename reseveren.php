@@ -39,11 +39,7 @@ function build_calendar($month, $year) {
     $datetoday = date('Y-m-d');
     $calendar = "<table class='table table-bordered'>";
     $calendar .= "<center><h2>$monthName $year</h2>";
-    $calendar.= "<a class='btn btn-xs btn-primary' href='?month=".date('m', mktime(0, 0, 0, $month-1, 1, $year))."&year=".date('Y', mktime(0, 0, 0, $month-1, 1, $year))."'>Vorige Maand</a> ";
-    
-    $calendar.= " <a href='index.php' class='btn btn-xs btn-primary' data-month='".date('m')."' data-year='".date('Y')."'>Deze Maand</a> ";
-    
-    $calendar.= "<a href='?month=".date('m', mktime(0, 0, 0, $month+1, 1, $year))."&year=".date('Y', mktime(0, 0, 0, $month+1, 1, $year))."' class='btn btn-xs btn-primary'>Vorige Maand</a></center><br>";
+
     
     $calendar .= "<tr>";
 
@@ -85,9 +81,9 @@ function build_calendar($month, $year) {
          if($date<date('Y-m-d')){
              $calendar.="<td><h4>$currentDay</h4> <button class='btn btn-danger btn-xs'>N/A</button>";
          }elseif(in_array($date, $bookings)){
-             $calendar.="<td><h4>$currentDay</h4> <button class='btn btn-danger btn-xs'>Already Booked</button>";
+             $calendar.="<td><h4>$currentDay</h4> <button class='btn btn-danger btn-xs'>Bezet</button>";
          }else{
-             $calendar.="<td class='$today'><h4>$currentDay</h4> <a href='book.php?date=".$date."' class='btn btn-success btn-xs'>Book</a>";
+             $calendar.="<td class='$today'><h4>$currentDay</h4> <a href='book.php?date=".$date."' class='btn btn-success btn-xs'>Reseveren</a>";
          }
          
          
