@@ -77,7 +77,21 @@ function pre_r($array)
                                 <h5 class="text-info"><?php echo $product['Categorie']; ?></h5>
                                 <p class="text-info"><?php echo $product['Beschrijving']; ?></p>
                                 <h4>€ <?php echo $product['Prijs']; ?></h4>
-                                <input type="text" name="quantity" class="form-control" value="1">
+                                <!-- <input type="text" name="quantity" class="form-control" value="1"> -->
+                                <div class="form-group">
+                                    <select class="form-control" name="quantity">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                        <option>7</option>
+                                        <option>8</option>
+                                        <option>9</option>
+                                        <option>10</option>
+                                    </select>
+                                </div>
                                 <input type="hidden" name="name" value="<?php echo $product['Naam']; ?>">
                                 <input type="hidden" name="price" value="<?php echo $product['Prijs']; ?>">
                                 <br>
@@ -98,7 +112,7 @@ function pre_r($array)
                 <table class="table">
                     <tr id="ShoppingCard">
                         <th colspan="5">
-                            <h3>Order Details</h3>
+                            <h3>Bestellingen</h3>
                         </th>
                     </tr>
                     <tr id="ShoppingCard">
@@ -142,12 +156,22 @@ function pre_r($array)
                                 if (isset($_SESSION['shopping_cart'])) :
                                     if (count($_SESSION['shopping_cart']) > 0) :
                                 ?>
-                                        <button type="submit" class="btn btn-secondary">Versturen</button>
+                                        <button type="submit" class="btn btn-secondary">Bestellen</button>
 
                                 <?php endif;
                                 endif; ?>
                             </td>
                         </tr>
+                        <div class="container">
+                            <div class="form-group col-6">
+                                <label for="">Straatnaam</label>
+                                <input required type="street" class="form-control" name="street" placeholder="Zonder huis nummer">
+                            </div>
+                            <div class="form-group col-6">
+                                <label for="">Huis nummer</label>
+                                <input required type="number" class="form-control" name="number" placeholder="Huis nummer">
+                            </div>
+                        </div>
             </form>
         </div>
     <?php
