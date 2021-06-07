@@ -21,7 +21,7 @@ while ($record = mysqli_fetch_assoc($result)) {
             <tr>
                 <th scope="col">id</th>
                 <th scope="col">Naam</th>
-                <th scope="col">Hoeveelhijd</th>
+                <th scope="col">Hoeveelheid</th>
                 <th scope="col">Prijs per stuk</th>
                 <th scope="col">Straat</th>
                 <th scope="col">Huisnummer</th>

@@ -117,7 +117,7 @@ function pre_r($array)
                     </tr>
                     <tr id="ShoppingCard">
                         <th width="40%">Maaltijd Naam</th>
-                        <th width="10%">Hoeveelheid</th>
+                        <th width="10%">Hoeveelhijd</th>
                         <th width="20%">Prijs</th>
                         <th width="15%">Totaal bedrag</th>
                         <th width="5%">Verwijderen</th>
