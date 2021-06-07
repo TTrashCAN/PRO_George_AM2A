@@ -1,3 +1,18 @@
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/ober.css">
+    <!-- de google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Monoton|Ubuntu&display=swap" rel="stylesheet">
+    <!-- Font Awesome 4 Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
 <?php
 
 $product_ids = array();
@@ -70,12 +85,10 @@ function pre_r($array)
                 while ($product = mysqli_fetch_assoc($result)) {
         ?>
                     <div class="col-sm-4 col-md-4 Scard" id="">
-                        <form method="post" action="index.php?content=productenpage&action=add&id=<?php echo $product['id']; ?>">
+                        <form method="post" action="ober.php?content=productenpage&action=add&id=<?php echo $product['id']; ?>">
                             <div class="products" id="menu-kaart">
                                 <img src="<?php echo $product['Image']; ?>" class="img-responsive" id="imageProduct">
                                 <h4 class="text-info"><?php echo $product['Naam']; ?></h4>
-                                <h5 class="text-info"><?php echo $product['Categorie']; ?></h5>
-                                <p class="text-info"><?php echo $product['Beschrijving']; ?></p>
                                 <h4>€ <?php echo $product['Prijs']; ?></h4>
                                 <!-- <input type="text" name="quantity" class="form-control" value="1"> -->
                                 <div class="form-group">
@@ -156,22 +169,12 @@ function pre_r($array)
                                 if (isset($_SESSION['shopping_cart'])) :
                                     if (count($_SESSION['shopping_cart']) > 0) :
                                 ?>
-                                        <button type="submit" class="btn btn-secondary">Bestellen</button>
+                                        <button type="submit" class="btn btn-secondary">Versturen</button>
 
                                 <?php endif;
                                 endif; ?>
                             </td>
                         </tr>
-                        <div class="container">
-                            <div class="form-group col-6">
-                                <label for="">Straatnaam</label>
-                                <input required type="street" class="form-control" name="street" placeholder="Zonder huis nummer">
-                            </div>
-                            <div class="form-group col-6">
-                                <label for="">Huis nummer</label>
-                                <input required type="number" class="form-control" name="number" placeholder="Huis nummer">
-                            </div>
-                        </div>
             </form>
         </div>
     <?php

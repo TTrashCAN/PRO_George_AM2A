@@ -1,0 +1,49 @@
+body {
+    background-image: url(../images/achtergrond.jpg);
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-size: cover;
+}
+
+
+/* cards */
+
+@media only screen and (min-width: 2000px) {}
+
+.products {
+    border: 1px solid #333;
+    background-color: white;
+    border-radius: 5px;
+    padding: 16px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#buttonshop {
+    border: 1px solid #333;
+    border-radius: 5px;
+}
+
+#imageProduct {
+    width: 315px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.text-info {
+    color: #212529!important;
+}
+
+.Scard p {
+    min-height: 3rem;
+}
+
+.Scard {
+    font-family: Baskerville Display PT Regular;
+    font-size: large;
+}
+
+#menu-kaart {
+    background-image: url(../images/achtergrond_cart.png);
+}
